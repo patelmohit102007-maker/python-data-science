@@ -26,23 +26,12 @@ else:
 
 #Task 4
 
-units = int(input("Enter the number of electricity units consumed: "))
+points = int(input("Enter your IPL fantasy team points: "))
 
-if units <= 100:
-    bill_amount = units * 5
-elif units <= 200:
-    bill_amount = units * 7
-elif units <= 300:
-    bill_amount = units * 10
+if points > 800:
+    print("champion!")
 else:
-    bill_amount = units * 15
-
-print("Your electricity bill amount is:", bill_amount)
-
-#Task 5
-
-number = int(input("Enter a number: "))
-if number % 2 == 0:
-    print("The number is even.")
-else:
-    print("The number is odd.")
+    if points >= 500:
+        print("Top performer!")
+    else:
+        print("Keep Trying!")
